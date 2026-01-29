@@ -1,0 +1,362 @@
+@import "tailwindcss";
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   LAB STATION - DESIGN SYSTEM
+   Theme: Dark Industrial Laboratory
+═══════════════════════════════════════════════════════════════════════════ */
+
+@theme {
+  /* Lab Colors - exposed as Tailwind utilities */
+  --color-lab-black: #0a0a0a;
+  --color-lab-dark: #1a1a1a;
+  --color-lab-grey: #2a2a2a;
+  --color-lab-light-grey: #3a3a3a;
+  --color-lab-yellow: #ffd700;
+  --color-lab-warning: #ff9100;
+  --color-lab-toxic: #00ff41;
+  --color-lab-danger: #ff3333;
+
+  /* Semantic colors */
+  --color-foreground: #ededed;
+  --color-foreground-muted: #888888;
+  --color-background: #0a0a0a;
+  --color-surface: #1a1a1a;
+
+  /* Fonts */
+  --font-heading: "Space Grotesk", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, sans-serif;
+  --font-arabic: "IBM Plex Sans Arabic", system-ui, sans-serif;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   CSS VARIABLES (for non-Tailwind usage)
+═══════════════════════════════════════════════════════════════════════════ */
+
+:root {
+  --lab-black: #0a0a0a;
+  --lab-dark: #1a1a1a;
+  --lab-grey: #2a2a2a;
+  --lab-yellow: #ffd700;
+  --lab-warning: #ff9100;
+  --lab-toxic: #00ff41;
+  --lab-danger: #ff3333;
+  --foreground: #ededed;
+  --foreground-muted: #888888;
+  --glow-yellow: 0 0 20px rgba(255, 215, 0, 0.3);
+  --glow-yellow-strong: 0 0 40px rgba(255, 215, 0, 0.5);
+}
+
+.font-arabic {
+  font-family: var(--font-arabic);
+}
+
+.rtl {
+  direction: rtl;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   BASE STYLES
+═══════════════════════════════════════════════════════════════════════════ */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0a0a0a;
+  color: #ededed;
+  font-family: "Inter", system-ui, sans-serif;
+  line-height: 1.8;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Space Grotesk", system-ui, sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+/* Container utility */
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 640px) {
+  .container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   UTILITY CLASSES
+═══════════════════════════════════════════════════════════════════════════ */
+
+/* Text glow */
+.text-glow {
+  text-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+}
+
+/* Glassmorphism */
+.glass {
+  background: rgba(26, 26, 26, 0.8);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   SCROLLBAR STYLING
+═══════════════════════════════════════════════════════════════════════════ */
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2a2a2a;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ffd700;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   SELECTION
+═══════════════════════════════════════════════════════════════════════════ */
+
+::selection {
+  background: rgba(255, 215, 0, 0.3);
+  color: #ededed;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   ANIMATIONS
+═══════════════════════════════════════════════════════════════════════════ */
+
+@keyframes pulse-glow {
+  0%,
+  100% {
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(255, 215, 0, 0.6);
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Spacing & Typography Helpers */
+.relaxed-content {
+  line-height: 1.8;
+  letter-spacing: 0.02em;
+}
+
+.font-lab {
+  font-family: "Space Grotesk", system-ui, sans-serif;
+  letter-spacing: 0.05em;
+}
+
+.bg-hazard-stripes {
+  background-image: repeating-linear-gradient(
+    45deg,
+    #000,
+    #000 10px,
+    transparent 10px,
+    transparent 20px
+  );
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   GLITCH TEXT EFFECT
+═══════════════════════════════════════════════════════════════════════════ */
+
+.glitch-text {
+  position: relative;
+  display: inline-block;
+}
+
+.glitch-text::before,
+.glitch-text::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+.glitch-text:hover::before {
+  animation: glitch-1 0.3s ease-in-out infinite;
+  color: #00ff41;
+  left: 2px;
+  text-shadow: -2px 0 #ff3333;
+  opacity: 0.8;
+}
+
+.glitch-text:hover::after {
+  animation: glitch-2 0.3s ease-in-out infinite;
+  color: #ff3333;
+  left: -2px;
+  text-shadow: 2px 0 #00ff41;
+  opacity: 0.8;
+}
+
+@keyframes glitch-1 {
+  0%, 100% { clip-path: inset(0 0 80% 0); }
+  25% { clip-path: inset(20% 0 60% 0); }
+  50% { clip-path: inset(40% 0 40% 0); }
+  75% { clip-path: inset(60% 0 20% 0); }
+}
+
+@keyframes glitch-2 {
+  0%, 100% { clip-path: inset(80% 0 0 0); }
+  25% { clip-path: inset(60% 0 20% 0); }
+  50% { clip-path: inset(40% 0 40% 0); }
+  75% { clip-path: inset(20% 0 60% 0); }
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   SMOKE/FOG ANIMATION
+═══════════════════════════════════════════════════════════════════════════ */
+
+@keyframes smoke-rise {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 0.3;
+  }
+  50% {
+    transform: translateY(-20px) scale(1.1);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(0) scale(1);
+    opacity: 0.3;
+  }
+}
+
+.animate-smoke {
+  animation: smoke-rise 8s ease-in-out infinite;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   ENHANCED GLOW EFFECTS
+═══════════════════════════════════════════════════════════════════════════ */
+
+.glow-radioactive {
+  box-shadow: 
+    0 0 20px rgba(255, 215, 0, 0.4),
+    0 0 40px rgba(255, 215, 0, 0.2),
+    0 0 60px rgba(255, 215, 0, 0.1);
+}
+
+.glow-radioactive-pulse {
+  animation: radioactive-pulse 2s ease-in-out infinite;
+}
+
+@keyframes radioactive-pulse {
+  0%, 100% {
+    box-shadow: 
+      0 0 20px rgba(255, 215, 0, 0.4),
+      0 0 40px rgba(255, 215, 0, 0.2);
+  }
+  50% {
+    box-shadow: 
+      0 0 40px rgba(255, 215, 0, 0.6),
+      0 0 80px rgba(255, 215, 0, 0.3),
+      0 0 120px rgba(255, 215, 0, 0.1);
+  }
+}
+
+.text-glow-strong {
+  text-shadow: 
+    0 0 10px rgba(255, 215, 0, 0.8),
+    0 0 20px rgba(255, 215, 0, 0.5),
+    0 0 40px rgba(255, 215, 0, 0.3);
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   WELCOME MESSAGE OVERLAY
+═══════════════════════════════════════════════════════════════════════════ */
+
+.welcome-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 90;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.welcome-message {
+  font-family: var(--font-arabic);
+  font-size: 2rem;
+  color: var(--lab-yellow);
+  text-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+  background: linear-gradient(
+    135deg,
+    rgba(10, 10, 10, 0.9) 0%,
+    rgba(26, 26, 26, 0.8) 100%
+  );
+  padding: 2rem 4rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 215, 0, 0.3);
+  backdrop-filter: blur(10px);
+}
+
+@media (max-width: 768px) {
+  .welcome-message {
+    font-size: 1.5rem;
+    padding: 1.5rem 2rem;
+  }
+}
+
