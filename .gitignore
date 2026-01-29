@@ -52,14 +52,11 @@ node_modules/
 *.glb
 
 # All images - can be added later
-public/images/
-*.png
-*.jpg
-*.jpeg
-*.gif
-*.svg
-*.webp
-*.ico
+# Ignore everything inside public/images
+public/images/*
+
+# But allow the directory itself so we can whitelist files inside it
+!public/images/
 
 # Whitelisted Essential Images (Character & UI)
 !public/images/Middle Center Waving Hello wb.png
