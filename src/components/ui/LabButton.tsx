@@ -15,7 +15,7 @@ export function LabButton({ children, variant = "primary", className, ...props }
       whileHover={{ scale: 1.05 }}
       whileTap={{ scale: 0.95 }}
       className={cn(
-        "relative overflow-hidden px-8 py-4 font-bold uppercase tracking-wider transition-all",
+        "relative overflow-hidden px-10 py-5 font-bold uppercase tracking-wider transition-all",
         "clip-path-slant", // We will add this utility or just use standard shapes
         className
       )}

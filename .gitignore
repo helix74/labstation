@@ -61,3 +61,8 @@ public/images/
 *.webp
 *.ico
 
+# Whitelisted Essential Images (Character & UI)
+!public/images/Middle Center Waving Hello wb.png
+!public/images/Thinking_wb.png
+!public/images/logo.jpg
+

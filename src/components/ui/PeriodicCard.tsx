@@ -33,7 +33,7 @@ export function PeriodicCard({
       <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-lab-yellow via-transparent to-lab-toxic opacity-50 group-hover:opacity-100 blur-sm transition-opacity duration-500" />
       
       {/* Card Body */}
-      <div className="relative h-full w-full bg-lab-black/80 backdrop-blur-xl rounded-[22px] border border-white/10 p-6 flex flex-col overflow-hidden">
+      <div className="relative h-full w-full bg-lab-black/80 backdrop-blur-xl rounded-[22px] border border-white/10 p-6 lg:p-8 flex flex-col overflow-hidden">
         
         {/* Header: Atomic Number & Price */}
         <div className="flex justify-between items-start mb-2">

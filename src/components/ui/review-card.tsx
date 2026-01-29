@@ -16,7 +16,7 @@ export function ReviewCard({ name, rating, text, date, className }: ReviewCardPr
   return (
     <div
       className={cn(
-        "relative flex flex-col gap-4 p-6 w-[350px] h-[200px] rounded-xl bg-lab-dark/40 border border-lab-grey/30 backdrop-blur-sm transition-all duration-300 hover:bg-lab-dark/60 hover:border-lab-yellow/30 hover:shadow-[0_0_20px_rgba(255,215,0,0.05)]",
+        "relative flex flex-col gap-4 p-6 lg:p-8 w-[350px] h-[200px] rounded-xl bg-lab-dark/40 border border-lab-grey/30 backdrop-blur-sm transition-all duration-300 hover:bg-lab-dark/60 hover:border-lab-yellow/30 hover:shadow-[0_0_20px_rgba(255,215,0,0.05)]",
         className
       )}
     >

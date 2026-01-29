@@ -11,7 +11,7 @@ export function VideoBanner() {
   return (
     <section
       ref={sectionRef}
-      className="relative py-24 md:py-32 bg-[#0a0a0a] overflow-hidden"
+      className="relative py-32 bg-[#0a0a0a] overflow-hidden"
     >
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-r from-[#ffd700]/5 via-transparent to-[#ffd700]/5" />

@@ -50,7 +50,7 @@ export function Contact() {
   };
 
   return (
-    <section id="contact" className="py-24 md:py-32 bg-[#1a1a1a] relative overflow-hidden">
+    <section id="contact" className="py-32 bg-[#1a1a1a] relative overflow-hidden">
       {/* Background */}
       <div className="absolute bottom-0 right-0 w-[600px] h-[600px] bg-[#ffd700]/5 rounded-full blur-[150px]" />
 
@@ -94,12 +94,12 @@ export function Contact() {
                       href={info.href}
                       target={info.href.startsWith("http") ? "_blank" : undefined}
                       rel={info.href.startsWith("http") ? "noopener noreferrer" : undefined}
-                      className="block bg-[#0a0a0a] border-2 border-[#2a2a2a] rounded-2xl p-6 hover:border-[#ffd700]/40 transition-all duration-300 group h-full"
+                      className="block bg-[#0a0a0a] border-2 border-[#2a2a2a] rounded-2xl p-6 lg:p-8 hover:border-[#ffd700]/40 transition-all duration-300 group h-full"
                     >
                       <ContactCardContent info={info} />
                     </a>
                   ) : (
-                    <div className="bg-[#0a0a0a] border-2 border-[#2a2a2a] rounded-2xl p-6 h-full">
+                    <div className="bg-[#0a0a0a] border-2 border-[#2a2a2a] rounded-2xl p-6 lg:p-8 h-full">
                       <ContactCardContent info={info} />
                     </div>
                   )}

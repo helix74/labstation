@@ -360,3 +360,43 @@ h6 {
   }
 }
 
+/* ═══════════════════════════════════════════════════════════════════════════
+   SPACING STANDARDIZATION UTILITIES
+═══════════════════════════════════════════════════════════════════════════ */
+
+/* Section vertical spacing - Standard: py-32 (8rem) */
+.section-spacing {
+  padding-top: 8rem;    /* 128px */
+  padding-bottom: 8rem;
+}
+
+/* Responsive container padding */
+.container-padding {
+  padding-left: 1rem;   /* 16px - Mobile */
+  padding-right: 1rem;
+}
+
+@media (min-width: 640px) {
+  .container-padding {
+    padding-left: 1.5rem;  /* 24px - Tablet */
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container-padding {
+    padding-left: 2rem;    /* 32px - Desktop */
+    padding-right: 2rem;
+  }
+}
+
+/* Card padding - Responsive */
+.card-padding {
+  padding: 1.5rem;  /* 24px - Mobile */
+}
+
+@media (min-width: 1024px) {
+  .card-padding {
+    padding: 2rem;  /* 32px - Desktop */
+  }
+}

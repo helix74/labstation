@@ -30,7 +30,7 @@ export function Menu() {
   };
 
   return (
-    <section id="menu" className="py-28 min-h-screen bg-lab-black relative overflow-hidden">
+    <section id="menu" className="py-32 min-h-screen bg-lab-black relative overflow-hidden">
       <div className="container relative z-10">
         
         {/* Section Header */}

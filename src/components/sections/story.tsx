@@ -6,7 +6,7 @@ import { LabButton } from "@/components/ui/LabButton";
 
 export function Story() {
   return (
-    <section className="py-28 bg-lab-black relative overflow-hidden">
+    <section className="py-32 bg-lab-black relative overflow-hidden">
       <div className="container relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         
         {/* Text Column */}

@@ -44,7 +44,7 @@ const REVIEWS = [
 
 export function Testimonials() {
   return (
-    <section className="py-24 bg-lab-black overflow-hidden relative">
+    <section className="py-32 bg-lab-black overflow-hidden relative">
       {/* Background Gradients */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute left-0 top-0 w-32 h-full bg-gradient-to-r from-lab-black to-transparent z-10" />
