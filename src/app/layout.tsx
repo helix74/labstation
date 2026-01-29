@@ -1,5 +1,15 @@
 import type { Metadata } from "next";
-import { Space_Grotesk, Inter, IBM_Plex_Sans_Arabic } from "next/font/google";
+// import { Space_Grotesk, Inter, IBM_Plex_Sans_Arabic } from "next/font/google";
+import { Space_Grotesk, Inter } from "next/font/google";
+
+// ...
+
+// const ibmPlexSansArabic = IBM_Plex_Sans_Arabic({
+//   variable: "--font-arabic",
+//   subsets: ["arabic"],
+//   weight: ["300", "400", "500", "700"],
+//   display: "swap",
+// });
 import { Header } from "@/components/layout/Header";
 import "./globals.css";
 import { PageLoader } from "@/components/page-loader";
@@ -18,12 +28,14 @@ const inter = Inter({
   display: "swap",
 });
 
+/*
 const ibmPlexSansArabic = IBM_Plex_Sans_Arabic({
   variable: "--font-arabic",
   subsets: ["arabic"],
   weight: ["300", "400", "500", "700"],
   display: "swap",
 });
+*/
 
 export const metadata: Metadata = {
   title: "Lab Station | The Lab is Working! 🥼🔥",
@@ -62,7 +74,7 @@ export default function RootLayout({
   return (
     <html lang="fr" className="dark" suppressHydrationWarning>
       <body
-        className={`${spaceGrotesk.variable} ${inter.variable} ${ibmPlexSansArabic.variable} antialiased bg-lab-black text-foreground`}
+        className={`${spaceGrotesk.variable} ${inter.variable} antialiased bg-lab-black text-foreground`}
       >
         <PageLoader />
         <SmoothScroll>
