@@ -46,7 +46,7 @@ export const signatureBurgers: MenuItem[] = [
       "Oignons",
       "Cornichons",
     ],
-    image: "/images/products/crispy_chicken_burger.png",
+    image: "/images/products/crispy_chicken_burger.webp",
     isSignature: false,
   },
   {
@@ -67,7 +67,7 @@ export const signatureBurgers: MenuItem[] = [
       "Oignons",
       "Cornichons",
     ],
-    image: "/images/products/classic_burger.png",
+    image: "/images/products/classic_burger.webp",
     isSignature: false,
   },
   {
@@ -88,7 +88,7 @@ export const signatureBurgers: MenuItem[] = [
       "Oignons",
       "Cornichons",
     ],
-    image: "/images/products/double_burger.png",
+    image: "/images/products/double_burger.webp",
     isSignature: false,
   },
   {
@@ -110,7 +110,7 @@ export const signatureBurgers: MenuItem[] = [
       "Oignons",
       "Cornichons",
     ],
-    image: "/images/products/triple_burger.png",
+    image: "/images/products/triple_burger.webp",
     isSignature: false,
   },
   {
@@ -128,7 +128,7 @@ export const signatureBurgers: MenuItem[] = [
       "Oignons",
       "Œuf brouillé",
     ],
-    image: "/images/products/scrambled_eggs_burger.png",
+    image: "/images/products/scrambled_eggs_burger.webp",
     isSignature: false,
   },
   {
@@ -149,7 +149,7 @@ export const signatureBurgers: MenuItem[] = [
       "Œuf",
       "Oignons sautés",
     ],
-    image: "/images/products/mr_bacon_burger.png",
+    image: "/images/products/mr_bacon_burger.webp",
     isSignature: true,
   },
   {
@@ -174,7 +174,7 @@ export const signatureBurgers: MenuItem[] = [
       "Crispy potato",
       "Tapenade",
     ],
-    image: "/images/products/texas_ribs_burger.png",
+    image: "/images/products/texas_ribs_burger.webp",
     isSignature: true,
   },
   {
@@ -199,7 +199,7 @@ export const signatureBurgers: MenuItem[] = [
       "Cornichons",
       "Tapenade",
     ],
-    image: "/images/products/100_meat_burger.png",
+    image: "/images/products/100_meat_burger.webp",
     isSignature: true,
   },
   {
@@ -221,7 +221,7 @@ export const signatureBurgers: MenuItem[] = [
       "Crispy potato",
       "Tapenade",
     ],
-    image: "/images/products/brisket_lab_burger.png",
+    image: "/images/products/brisket_lab_burger.webp",
     isSignature: true,
   },
   {
@@ -242,7 +242,7 @@ export const signatureBurgers: MenuItem[] = [
       "Oignons caramélisés",
       "Sauce aux champignons blancs",
     ],
-    image: "/images/products/creamy_mushroom_burger.png",
+    image: "/images/products/creamy_mushroom_burger.webp",
     isSignature: false,
   },
   {
@@ -262,7 +262,7 @@ export const signatureBurgers: MenuItem[] = [
       "Mozzarella",
       "Olives",
     ],
-    image: "/images/products/monto_cinto_burger.png",
+    image: "/images/products/monto_cinto_burger.webp",
     isSignature: false,
   },
   {
@@ -276,7 +276,7 @@ export const signatureBurgers: MenuItem[] = [
     description_derja:
       "Attention danger! Sauce spicy lel les braves seulement. 🔥",
     ingredients: ["Steak haché", "Cheddar", "Sauce spicy", "Planet rouge"],
-    image: "/images/products/spicy_burger.png",
+    image: "/images/products/spicy_burger.webp",
     isSignature: false,
     isSpicy: true,
     spicyLevel: 2,
@@ -297,7 +297,7 @@ export const signatureBurgers: MenuItem[] = [
       "Mozzarella",
       "Roquette",
     ],
-    image: "/images/products/truffle_burger.png",
+    image: "/images/products/truffle_burger.webp",
     isSignature: true,
   },
   {
@@ -317,7 +317,7 @@ export const signatureBurgers: MenuItem[] = [
       "Mozzarella",
       "Sauce fromagère",
     ],
-    image: "/images/products/full_cheese_burger.png",
+    image: "/images/products/full_cheese_burger.webp",
     isSignature: false,
   },
 ];

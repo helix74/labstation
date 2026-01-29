@@ -63,3 +63,7 @@ public/images/*
 !public/images/Thinking_wb.png
 !public/images/logo.jpg
 
+# Whitelisted Product Images (WebP)
+!public/images/products/
+!public/images/products/*.webp
+
